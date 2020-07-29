@@ -457,7 +457,7 @@ open class Popover: UIView {
             endAngle: self.radians(90),
             clockwise: false)
         
-        arrow.addLine(to: CGPoint(x: self.bounds.width + arrowPoint.x - self.cornerRadius, y: self.bounds.height))
+        arrow.addLine(to: CGPoint(x: self.bounds.width + arrowPoint.x + self.cornerRadius, y: self.bounds.height))
         arrow.addArc(
             withCenter: CGPoint(
                 x: self.bounds.width + arrowPoint.x - self.cornerRadius,
